@@ -10,15 +10,26 @@
 
 ## 🛠️ 사용 기술
 * Back-End
-  * 
+  
+  ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=flat&logo=spring&logoColor=white)
+  ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=flat&logo=mysql&logoColor=white)
+  ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=flat&logo=redis&logoColor=white)
+  ![JWT](https://img.shields.io/badge/JWT-black?style=flat&logo=JSON%20web%20tokens)
+
+  
 * Front-End
-  * 
+
+  ![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)
+  ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white)
+  ![Next JS](https://img.shields.io/badge/Next-black?style=flat&logo=next.js&logoColor=white)
+
+
 
 ## 🗓️ 개발 일정
 ![개발일정](https://github.com/user-attachments/assets/4f06ac35-2681-47c2-8e00-f0e6854969c5)
 <br>
 
-## 팀원 소개
+## 🖤 팀원 소개
 * Back-End
   * [맹주영](https://github.com/MaengJuyoung)
   * [윤영관](https://github.com/yoonyeongkwan)
