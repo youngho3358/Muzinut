@@ -38,6 +38,6 @@
   * [장원재](https://github.com/won-jae-jang)
   * [전영호](https://github.com/youngho3358)
 
-* Front-End
+* Front-End ★
   * [권지원](https://github.com/G1Coding)
   * [배도현](https://github.com/SnowsFE)
