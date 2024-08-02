@@ -1,0 +1,16 @@
+.common__button {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #479953;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    height: 43px;
+  }
+  
+
+.heart__button {
+  background-color: transparent;
+  border: none;
+}

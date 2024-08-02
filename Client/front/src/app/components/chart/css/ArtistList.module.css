@@ -1,0 +1,77 @@
+.tr__wrap {
+}
+.td1__ranking {
+  padding-left: 20px;
+  width: 60px;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  /* border: 3px solid red; */
+}
+
+.td2__picture {
+  width: 150px;
+  padding-left: 30px;
+  /* border: 1px solid orange; */
+}
+.td2__picture img {
+  /* border: 1px solid yellow; */
+  border-radius: 50%;
+}
+
+.td3__info__section {
+  padding-left: 48px;
+  /* border: 1px solid green; */
+}
+.td3__info__section .name {
+  font-size: 34px;
+  font-weight: bold;
+  width: 400px;
+}
+.td3__info__section .info {
+  margin-top: 30px;
+  font-size: 18px;
+  display: flex;
+  gap: 49px;
+}
+.follow__num {
+  color: rgb(153, 153, 153);
+}
+.go__profile {
+  color: rgb(153, 153, 153);
+  cursor: pointer;
+}
+.go__profile:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.td4__follow__btn {
+  text-align: right; /*버튼만 오른쪽 정렬*/
+  padding-left: 0;
+
+  /* border: 1px solid blue; */
+}
+.td4__follow__btn button {
+  background-color: rgb(149, 196, 149);
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+
+  border: none;
+  border-radius: 20px;
+  width: 120px;
+  height: 50px;
+}
+
+.td4__follow__btn button:hover {
+  background-color: rgba(93, 144, 93, 0.62);
+  color: white;
+}
+.follow__num__green {
+  color: rgb(18, 151, 18);
+}
+.info a, .name a {
+  text-decoration: none;
+  color: inherit;
+}

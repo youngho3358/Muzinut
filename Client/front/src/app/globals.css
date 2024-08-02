@@ -1,0 +1,33 @@
+/* 전역 스타일 정의 */
+:root {
+  --text-color: black; /* 라이트 모드 */
+  font-family: "esamanru Bold";
+}
+
+[data-theme="dark"] {
+  --text-color: white; /* 다크 모드 */
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+}
+
+@font-face {
+  font-family: "esamanru Bold";
+  font-weight: 400;
+  src: url("../../public/fonts/esamanru\ Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "esamanru Light";
+  font-weight: 700;
+  src: url("../../public/fonts/esamanru\ Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "esamanru Medium";
+  font-weight: 700;
+  src: url("../../public/fonts/esamanru\ Medium.ttf") format("truetype");
+}

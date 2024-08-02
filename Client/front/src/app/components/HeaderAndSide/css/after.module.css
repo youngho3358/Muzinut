@@ -1,0 +1,132 @@
+.login__btn__container {
+  position: relative; /*디테일 박스와 위치 조정*/
+  display: inline-block;
+  /* border: 1px solid rgb(194, 190, 190); */
+  border: none;
+  border-radius: 18px;
+  font-size: 15px;
+  padding: 4px 12px;
+}
+
+.login__btn__container:hover {
+  cursor: pointer;
+  background-color: rgb(226, 226, 226);
+}
+
+.user__img {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 6px 4px 0 6px;
+}
+.user__name {
+  color: green;
+  letter-spacing: 4px;
+}
+.login__btn__wrap {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* 디테일 박스 */
+.user__detail__box {
+  z-index: 999;
+  position: absolute;
+  top: 80px;
+  right: 30px;
+  width: 280px;
+  height: 450px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(96, 96, 96, 0.4); /* 부드러운 그림자 효과 */
+  /* border: 1px solid black; */
+  background-color: #eff2f6;
+}
+.my__and__book {
+  display: flex;
+  gap: 6px;
+  padding: 10px 3px;
+  /* border: 1px solid black; */
+}
+.my__page,
+.book__mark {
+  display: block;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  margin: 0 10px;
+  padding: 14px 10px;
+  border-radius: 20px;
+  border: none;
+  /* border: 1px solid yellow; */
+}
+
+.my__page:hover,
+.book__mark:hover,
+.chat:hover,
+.friend__list:hover,
+.nuts:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+.chat__and__nuts {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* border: 1px solid black; */
+}
+
+.my__and__book,
+.chat__and__nuts {
+  border-radius: 14px;
+  margin: 14px;
+  background-color: white;
+}
+.chat, .friend__list,
+.nuts {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px;
+  margin: 3px 7px;
+  border-radius: 20px;
+  border: none;
+  /* border: 1px solid black; */
+}
+
+.logout__btn {
+  /* border-top: 1px solid black; */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  border-radius: 8px;
+  margin: 10px 40px 18px 40px;
+  background-color: rgb(226, 226, 226);
+}
+.logout__btn:hover {
+  background-color: rgb(147, 205, 143);
+}
+
+.divider {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgb(232, 232, 232);
+}
+.divider__right {
+  border-right: 1px solid rgb(232, 232, 232);
+}
+
+
+/* text-decoration 속성 */
+.my__page, .book__mark, .chat, .friend__list, .nuts, .logout__btn {
+  text-decoration: none;
+  color: black;
+}

@@ -1,0 +1,276 @@
+.songForm__container {
+  padding: 20px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* border: 1px solid black; */
+}
+.songForm__container .title {
+  font-size: 45px;
+}
+/* 수록곡 추가 버튼 UI */
+.add__song {
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  /* border: 1px solid red; */
+}
+.arrow {
+  font-size: 60px;
+}
+
+.songList__title {
+  display: flex;
+  padding: 0;
+  font-size: 20px;
+  border-bottom: 1px solid gray;
+  /* border: 1px solid black; */
+}
+
+/* 추가된 곡 리스트 UI */
+.songList__wrap {
+  display: grid;
+  grid-template-columns: 1fr 70px 1fr;
+  gap: 10px;
+  /* border: 1px solid blue; */
+}
+
+/* 음악 정보랑 버튼 */
+.songList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: none;
+}
+.songInfo {
+  flex-grow: 1;
+  /* border: 1px solid red; */
+}
+.delete__btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.leftColumn {
+  grid-column: 1;
+}
+
+.rightColumn {
+  grid-column: 3;
+}
+
+/* 모달 부분!!!!!!!!!!!!!! */
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(144, 180, 154, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__container {
+  position: relative;
+  width: 48%;
+  min-width: 45%;
+  height: 80%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+}
+.modal__container__top {
+  font-size: 18px;
+  padding: 12px 20px;
+  border-bottom: 1px solid #ebedf3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* border: 1px solid blue; */
+}
+
+.modal__container__contents {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* background: yellow; */
+}
+.left__and__right {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  /* background-color: white; */
+}
+.left,
+.right {
+  width: 45%;
+}
+.divider {
+  width: 0.5px;
+  height: auto;
+  margin: 0 28px;
+  padding: 0;
+  background-color: #ebedf3;
+}
+.divider__row {
+  height: 0.5px;
+  width: auto;
+  margin: 10px 0 19px 0;
+  padding: 0;
+  background-color: #ebedf3;
+}
+.modal__container__contents .left {
+  width: 57%;
+  /* border: 7px solid rgb(128, 100, 199); */
+}
+.modal__container__contents .right {
+  width: 40%;
+  /* border: 7px solid rgb(207, 227, 142); */
+}
+.modal__close__btn {
+  cursor: pointer;
+}
+
+.form__label,
+.form__label > label {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  /* font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red; */
+}
+.form__label > label > div {
+  font-size: 14px;
+  font-weight: 300;
+}
+.text__input,
+.textarea__input,
+.file__input {
+  /* width: 100%; */
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: #f1eedc;
+}
+.textarea__input {
+  height: 280px;
+  overflow-y: scroll;
+}
+
+.modal__container__bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: 3px solid #ebedf3;
+  /* border: 1px solid green; */
+}
+.modal__container__bottom .btns {
+  width: inherit;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+  /* background: pink; */
+}
+.modal__container__bottom .btns > button {
+  width: 150px;
+  padding: 10px 20px;
+  background-color: none;
+  border: none;
+  border-radius: 7px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* 닫기 버튼 */
+.submit__close__btn {
+  background-color: transparent;
+}
+.submit__btn,
+.submit__close__btn:hover {
+  color: rgb(0, 112, 71);
+  background-color: #43eca684;
+  line-height: 32px;
+}
+/* 제출 버튼 */
+
+/* 작사가, 작곡가 */
+.together {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  max-width: 805px;
+  /* border: 1px solid black; */
+}
+.together > .form__label > label > .text__input {
+  width: 200;
+  /* border: 1px solid red; */
+}
+
+/* 장르 선택 기능 */
+.genre__btn {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 7px;
+  border-radius: 12px;
+  padding: 15px 21px;
+  border: 1px solid #ebedf3;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.genre__btn > button {
+  margin-bottom: 8px;
+  padding: 5px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #dad3be;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+/* 기타 버튼 조절하기 */
+.genre__etc__btn,
+.tail {
+  grid-row: span 2;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+.genre__btn > button:hover {
+  font-weight: bold;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.selected__genre,
+.tail {
+  background-color: #6b8a7a !important;
+  color: white;
+  border: none;
+  padding: 8px;
+  /* border-radius: 4px;
+  padding: 6px 10px;
+  margin-right: 3px; */
+  cursor: pointer;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}

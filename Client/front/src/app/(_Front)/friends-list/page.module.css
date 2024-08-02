@@ -1,0 +1,127 @@
+.main {
+    width: 50%;
+    margin: 0 auto;
+    overflow: auto;
+    height: 80dvh;
+    
+    border: 2px solid #eee;
+    box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 18px;
+    padding: 14px;
+    /* border-color: rgb(255, 68, 0);
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-right-style: solid; */
+  
+    display: flex;
+    flex-direction: column;
+    /* align-items: stretch; */
+  }
+  
+/* __________ 스크롤 바 변경 __________ */
+  /* WebKit 엔진 기반 브라우저(Chrome, Safari) 스크롤 바 스타일 */
+  .main__wrapper::-webkit-scrollbar {
+    width: 13px;
+    opacity: 0; /* 스크롤 바 숨김 */
+  }
+  .main::-webkit-scrollbar-track {
+    background-color: rgb(27, 87, 46);
+    border-radius: 20px;
+  }
+  .main:hover::-webkit-scrollbar-thumb {
+    background: #76a279;
+    border-radius: 20px;
+  }
+  
+  .header {
+    height: 53px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+    /* border: 1px solid red; */
+  }
+  
+  .header h3 {
+    font-size: 20px;
+  }
+
+  .contents{
+    border-top: 1px solid black;
+  }
+  .contents ul {
+    list-style: none;
+    padding: 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------Friend 모듈 부분----------*/
+.friend__list {
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  /* border: 1px solid black; */
+}
+
+.friend__list:hover {
+  background-color: #f1f1f1;
+}
+
+.user__img,
+.user__img img {
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.friend__info {
+  display: flex;
+  flex-direction: column;
+  color: #536471;
+  font-size: 15px;
+}
+.friend__info a {
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+}
+
+.name:hover {
+    text-decoration: underline;
+}
+.name {
+    font-size: 24px;
+}
+.friend__list .chat__btn {
+  margin-left: auto;
+}
+.block__btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid transparent;
+  margin-top: 8px;
+  padding: 0;
+  color: red;
+}
+.block__btn:hover {
+    border-bottom: 1px solid black;
+}
+.chat__btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 4px 12px;
+}

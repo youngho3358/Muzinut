@@ -1,0 +1,124 @@
+.player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+ 
+
+  border-top: 1px solid #ddd;
+  display: flex;
+  /* align-items: center; */
+  padding: 10px;
+  
+  justify-content: space-between; /* 자식 요소들을 양 끝에 배치 */
+  align-items: center;
+  /* border: 1px solid red; */
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+}
+
+
+
+/* 앨범+재생 버튼 */
+.album__and__control{
+  display: flex;
+  gap: 30px;
+  margin-left: 60px;
+  /* border: 1px solid red; */
+}
+.album__info {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-right: 30px;
+  /* border: 1px solid white; */
+}
+.album__info .title {
+  color: green;
+}
+.album__info .artist {
+  margin-left: 5px;
+  color: rgb(83, 83, 83);
+}
+
+/* 이전/다음/재생 버튼 */
+.control {
+  margin: 13px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid yellow; */
+}
+.control button {
+  background-color: transparent;
+  cursor: pointer;
+}
+.control .play__btn {
+  border: none;
+  margin: 0 30px;
+  /* border: 1px solid red; */
+}
+.control .prev__btn, .control .next__btn {
+  border: none;
+}
+
+
+/* 오른쪽 부분 */
+.right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-right: 70px;
+  /* border: 1px solid yellow; */
+}
+/* 볼륨 컨트롤 부분 */
+.volumn__control {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.volumn__control input {
+  cursor: pointer;
+}
+/* 메뉴 부분 */
+.menu__btn {
+
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+
+}
+
+
+.btn__img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%); /* 이미지 색상을 흰색으로 변경 */
+}
+
+
+.playlist {
+  list-style: none;
+  padding: 0;
+}
+
+.trackItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.trackItem.currentTrack {
+  background-color: green;
+}
+
+.albumImg {
+  margin-right: 10px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.artist {
+  color: gray;
+}

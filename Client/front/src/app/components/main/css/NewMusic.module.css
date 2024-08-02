@@ -1,0 +1,113 @@
+.container {
+  padding: 30px 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+  overflow: hidden;
+  /* flex-wrap: wrap; */
+}
+.slider {
+  display: flex;
+  gap: 30px;
+  /* border: 1px solid red; */
+}
+.arrow {
+  background-color: transparent;
+}
+.sliderContainer {
+  /* background-color: red; */
+
+  display: flex;
+}
+.item {
+  /* background-color: yellow; */
+}
+
+.thumbnail {
+  width: 210px;
+  height: 210px;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  overflow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thumbnail img {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.info {
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.info a {
+  text-decoration: none;
+  color: inherit;
+}
+.info h2:hover {
+  text-decoration: underline;
+}
+.info h3:hover {
+  color: green;
+}
+
+.container {
+  /* 기존 스타일 */
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.sliderContainer {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.item {
+  position: relative;
+  margin: 10px;
+}
+
+.thumbnail {
+  position: relative;
+}
+
+.playButton {
+  position: absolute;
+
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  border-radius: 50%;
+width: 60%;
+height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.thumbnail:hover .playButton {
+  opacity: 1;
+}
+
+.info {
+  /* 기존 스타일 */
+}

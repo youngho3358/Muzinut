@@ -1,0 +1,38 @@
+.tr__wrap {
+}
+.td1__select {
+  padding-left: 40px;
+  width: 30px;
+
+  /* border: 3px solid red; */
+}
+
+.td2__picture {
+  width: 80px;
+  padding-left: 20px;
+  /* border: 1px solid orange; */
+}
+
+.td3__ranking {
+  padding-left: 5px;
+  width: 60px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.td4__title {
+  padding-left: 20px;
+  font-size: 20px;
+  width: 40%;
+}
+.td5__artist {
+  padding-left: 20px;
+  font-size: 18px;
+  color: rgb(83, 82, 82);
+}
+
+.td6__play__btn, .td7__option {
+    padding-left: 20px;
+    text-align: right; /*버튼만 오른쪽 정렬*/
+    width: 60px;
+}

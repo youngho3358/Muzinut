@@ -1,0 +1,168 @@
+/* 공통 */
+.sidebar a {
+  text-decoration: none;
+  /* display: flex;
+  align-items: center; */
+  transition: 0.3s;
+  padding: 6px 0 4px;
+  color: var(--text-color); /*다크모드*/
+}
+.sidebar a:hover {
+  color: rgba(63, 136, 106, 0.899);
+}
+
+.sidebar li {
+  list-style-type: none;
+}
+.sidebar {
+  height: 100%;
+  position: fixed;
+
+  /* padding-top: 60px;
+  top: 0; */
+  top: 60px;
+  left: 0;
+  /* background-color: #e3e3e3f8; */
+  border-right: 3px solid rgb(194, 190, 190);
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+/* 고객 센터 위에 영역 나누기*/
+.divided__line {
+  height: 15px;
+  margin: 18px 0;
+  border-bottom: 2px solid rgb(194, 190, 190);
+}
+
+/* 사이드 바 닫힘/열림 크기 조정 */
+.closed {
+  width: 80px;
+}
+.open {
+  width: 240px;
+}
+
+.sidebar > ul > li:first-child {
+  background-color: rgba(39, 144, 71, 0.765);
+}
+
+/* ___________________ 닫혔을 떄 ___________________ */
+
+/* 목록 전체 컨테이너 */
+.closed .container__section {
+  /* background-color: pink; */
+  text-align: center;
+}
+
+/* ul 태그 컨테이너 */
+.closed .service__container {
+  margin-left: 0;
+  padding: 0;
+  display: inline-block; /* 가운데 정렬 -> block 요소로 */
+}
+
+/* li 태그 컨테이너 */
+.closed .service__btn {
+  display: block;
+  text-align: left;
+  margin-bottom: 13px;
+  /* background-color: pink; */
+}
+
+/* *************기본 사이드 바(close) */
+
+.closed .wrap__icon {
+  display: block;
+  text-align: center;
+}
+
+/* 아이콘과 텍스트 간 간격 */
+.closed .close__text {
+  margin-top: 5px;
+  font-size: 14px;
+  display: block;
+}
+
+/* ___________________ 열렸을 떄 ___________________ */
+
+/* 열렸을 때 -> 기본 사이드의 텍스트 없애기 */
+.sidebar.open .close__text {
+  display: none;
+}
+
+/* 목록 전체 컨테이너 */
+.open .container__section {
+  margin-bottom: 60px;
+  /* background-color: pink; */
+}
+
+.open .service__container {
+  margin-top: 19px;
+  margin-left: 0;
+  padding: 0;
+
+  display: inline-block;
+  text-align: left;
+  padding-left: 0;
+}
+
+.open .service__btn {
+  display: flex;
+  gap: 20px; /*이미지와 text 간격*/
+  margin-bottom: 20px;
+  margin-left: 20px;
+  /* border: 1px solid black; */
+}
+
+.open .service__btn > a {
+  /* border: 1px solid green; */
+  overflow: none;
+  top: 0;
+  left: 0;
+  height: 60px;
+  position: relative;
+  display: block;
+  margin-top: 8px;
+}
+
+.open .service__btn > a > Image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.open .service__btn > ul {
+  margin-top: 18px;
+  /* border: 1px solid black; */
+}
+.open .service__btn > ul > li:not(:first-of-type) {
+  margin-top: 17px;
+}
+.open .service__btn > ul > li:first-of-type {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+/* __________ 스크롤 바 변경 __________ */
+/* 기본 - 스크롤 바 안 보이게 */
+.sidebar {
+  overflow: hidden;
+}
+/* 마우스를 올렸을 때 - 스크롤 바를 보이게 */
+.sidebar:hover {
+  overflow: auto;
+}
+/* WebKit 엔진 기반 브라우저(Chrome, Safari) 스크롤 바 스타일 */
+.sidebar::-webkit-scrollbar {
+  width: 13px;
+  opacity: 0; /* 스크롤 바 숨김 */
+}
+.sidebar::-webkit-scrollbar-track {
+  background-color: rgb(27, 87, 46);
+  border-radius: 20px;
+}
+.sidebar:hover::-webkit-scrollbar-thumb {
+  background: #76a279;
+  border-radius: 20px;
+}

@@ -1,0 +1,54 @@
+/* 전체 컨테이너 */
+.container {
+  width: 100%;
+  /* border: 3px solid blue; */
+}
+
+/* 차트 Table 컨테이너 */
+.artist__chart__container {
+  padding: 20px 0;
+  /* border: 1px solid pink; */
+}
+.artist__chart__container table {
+  width: 100%;
+  text-align: left; /*왼쪽 정렬*/
+  /* border-collapse: collapse; //td간 간격 제거 */
+  border-collapse: separate;
+  border-spacing: 0 30px; /*Table column 사이 간격*/
+  padding: 0;
+  margin: 0;
+}
+
+/* 테이블 헤더 blind 처리 */
+.blind {
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+
+/* 각 td에 padding-top padding-bottom 동일하게 적용*/
+.table__row tr td {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.table__row tr td:first-child {
+  padding-right: 50px;
+}
+.table__row tr td:last-child {
+  padding-right: 50px;
+}
+.table__row tr {
+  border-bottom: 1px solid rgb(194, 190, 190);
+}
+.table__row tr:last-child {
+  border-bottom: none;
+}
+.table__row tr td,
+.table__row tr th {
+  padding-right: 0;
+}
+

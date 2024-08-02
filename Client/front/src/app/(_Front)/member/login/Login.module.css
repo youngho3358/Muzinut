@@ -1,0 +1,135 @@
+.login__container {
+  display: flex;
+  align-items: center;
+  padding: 20px 30px;
+  justify-content: center;
+  margin-top: -30px;
+  /* border: 1px solid black; */
+  /* background-color: yellow; */
+}
+/*form 부분*/
+.form__container {
+  width: 520px;
+  padding: 10px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  /* border: 1px solid blue; */
+}
+/* 아이디/비번 입력 창 */
+.form__container > ul {
+  margin-top: 48px;
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+}
+/*라벨 안 보이게 함*/
+.form__container > ul > li > label {
+  display: block;
+  width: 0px;
+  height: 0px;
+  color: transparent;
+}
+.form__container > ul > li > input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  padding: 0 20px;
+  outline: none;
+
+  border-radius: 0 0 5px 5px;
+  border: 2px solid #eee;
+}
+.form__container > ul > li > input:focus {
+  border-color: rgb(122, 169, 125);
+}
+.form__container > ul > li:first-child > input {
+  border-bottom: 0px;
+  border-radius: 5px 5px 0 0;
+}
+
+/* 에러 메시지 && 아이디/비번 찾기 */
+.error__forgot {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+}
+.error__msg {
+  /* border: 1px solid red; */
+}
+.forgot__link {
+  display: flex;
+  gap: 9px;
+  color: #999;
+  font-size: 14px;
+  /* border: 1px solid black; */
+}
+.forgot__link a {
+  /* text-decoration: none; */
+  color: #999;
+}
+.divider {
+  width: 1px;
+  border-right: 1px solid #999;
+}
+
+/* 로그인 부분 */
+.login__btn {
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 11px 0 9px;
+  /* border: 1px solid black; */
+}
+.login__btn > button {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(38, 137, 27);
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  border: none;
+
+}
+.login__btn > button:hover {
+  cursor: pointer;
+}
+
+/* 간편 로그인 */
+.social__login {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  gap: 30px;
+  /* border: 1px solid black; */
+}
+
+.social__btn > ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.social__btn > ul > li {
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+.social__btn a {
+  /* border: 1px solid red; */
+}
+.social__btn img {
+  /* border: 1px solid red; */
+}
+.social__btn > ul > li > span {
+  font-size: 10px;
+}
+

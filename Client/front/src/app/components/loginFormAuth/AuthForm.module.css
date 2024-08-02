@@ -1,0 +1,36 @@
+.authform__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 30px;
+  /* border: 1px solid black; */
+}
+
+.title__container {
+  letter-spacing: 4px;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+
+.title__container a {
+  text-decoration: none;
+  color: green;
+}
+
+/* form 컨테이너 부분 */
+.form__container {
+  width: 520px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid blue; */
+}
+
+/* footer 부분 */
+.footer__container {
+  margin-top: 40px;
+  /* border: 1px solid rebeccapurple; */
+}
+.footer__container a {
+  color: #999;
+}

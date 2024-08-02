@@ -1,0 +1,43 @@
+.form__zone {
+  border-top: 1px solid rgba(239, 243, 244, 1);
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  background-color: rgb(239, 243, 244);
+  margin: 4px 12px;
+  border-radius: 16px;
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.form textarea {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 15px;
+  line-height: 20px;
+  flex: 1;
+  outline: none;
+}
+.submit__btn {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 34px;
+  cursor: pointer;
+  background-color: green;
+}
+.submit__btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+  background-color: transparent;
+}

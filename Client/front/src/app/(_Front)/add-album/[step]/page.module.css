@@ -1,0 +1,226 @@
+.container {
+  margin-top: 40px;
+  height: 630px;
+  border: none;
+  border-radius: 32px;
+  background-color: #cde2ce;
+  border: 2px solid rgb(231, 231, 231);
+  display: flex;
+}
+.Title {
+  font-size: xx-large;
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #4caf50;
+  /* border: 1px solid red; */
+}
+
+/* _______step 부분_________ */
+.steps__container {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 24px 20px 24px;
+  border-right: 1px solid rgb(231, 231, 231);
+  background-color: rgb(255, 255, 255);
+  border-radius: 32px 0 0 32px;
+}
+/* 각각의 step박스들 */
+.step {
+  position: relative;
+  display: flex;
+  padding: 8px 14px;
+  gap: 34px;
+  border-radius: 5px;
+  align-items: center;
+}
+.steps__index {
+  margin-left: 30px;
+  font-size: 40px;
+  z-index: 999;
+  width: 30px;
+  height: 45px;
+  text-align: center;
+  /* border: 1px solid orange; */
+}
+.steps__contents {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100px;
+  width: 150px;
+  justify-content: center;
+  /* border: 1px solid green; */
+}
+.steps__label {
+  font-size: 27px;
+}
+.steps__description {
+  font-size: 18px;
+}
+
+/* 선택된 단계 */
+.selected {
+  background-color: #cde2ce;
+  border: none;
+  border-radius: 20px;
+}
+/* 완료 단계 */
+.completed {
+  background-color: white;
+}
+
+/* 단계에 동그라미 체크여부 두기(기본 테두리만)*/
+.step::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 32px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 1px solid #4caf50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+/* 선택된 부분에 초록색 동그라미로 강조 */
+.step.selected::before {
+  background-color: #4caf50;
+  border: none;
+}
+/* 선택된 부분에 인덱스(1) 강조 */
+.step.selected .steps__index {
+  font-weight: bold;
+  color: white;
+}
+/* 선택된 부분에 label(단계 1) 강조 */
+.step.selected .steps__label {
+  font-weight: bold;
+  color: rgb(27, 108, 48);
+}
+
+/* 완료된 단계에 인덱스 삭제 */
+.step.selected.completed .steps__index {
+  opacity: 0;
+}
+/* 완료된 단계에 체크 표시 */
+.step.completed:before,
+.submit__btn {
+  background-color: #4caf50;
+  border: none;
+  content: "✓";
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+/* _________ form(앨범 컨테이너)부분 _________ */
+.album__container {
+  position: relative;
+
+  width: calc(100% - 280px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+}
+
+.img__container {
+  display: block;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+}
+.img__container:hover {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+/* 이미지 가려지고 위에 올라오는 텍스트 */
+.image__over__text {
+  display: none;
+
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 50px;
+  font-size: 27px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
+  padding: 30px 15px 10px 15px;
+  border-radius: 5px;
+}
+/* 이미지 위에 hover했을 때 텍스트 보이기 */
+.img__container:hover .image__over__text {
+  display: block;
+}
+.img__container:hover > :not(.image__over__text) {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* 버튼 */
+.bottom__container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border-top: 3px solid #ebedf3;
+}
+.btn__container {
+  width: inherit;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.next__btn,
+.prev__btn,
+.submit__btn {
+  width: 150px;
+  padding: 10px 20px;
+  background-color: none;
+  border: none;
+  border-radius: 7px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.next__btn:hover,
+.prev__btn:hover {
+  color: rgb(0, 112, 71);
+  background-color: #43eca684;
+}
+
+.submit__btn {
+  opacity: 0.3;
+}
+/* checkbox가 선택됐을 때 submit__btn 스타일 변경 */
+.submit__btn.active{
+opacity: 1;
+}  
+.form__container {
+  flex-grow: 1;
+}
+.agree {
+  margin-left: 8px;
+  font-size: 21px;
+}
+
+.checkboxError input {
+  border: 2px solid red;
+}
+
+.checkboxError span {
+  color: red;
+}

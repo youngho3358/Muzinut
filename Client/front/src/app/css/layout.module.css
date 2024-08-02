@@ -1,0 +1,28 @@
+.container {
+  display: grid;
+
+  height: 100vh;
+  grid-template-areas:
+    "header header"
+    "header main";
+}
+.header__side {
+  grid-area: header;
+}
+.main__page {
+  padding: 12px 42px 0 48px;
+  padding-right: calc(50% - 642px);
+  padding-left: calc(50% - 642px);
+  margin-top: 70px;
+  margin-right: 14px;
+  /* margin-bottom: 200px; */
+  /* border: 1px solid black; */
+}
+
+.side__open {
+  margin-left: 250px;
+  min-width: calc(90% - 250px);
+}
+.side__close {
+  margin-left: 100px;
+}
